@@ -26,6 +26,9 @@ var c, python, java bool
 func main() {
 	var i int
 	fmt.Println(i, c, python, java)
+	var x, t int = 1, 2
+	var pyts, jaba = true, false, "no!"
+	fmt.Println(x, t, s, pyts, jaba)
 
 	fmt.Println("My favorite number is", rand.Intn(10))
 	fmt.Println(math.Pi)

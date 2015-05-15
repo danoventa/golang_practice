@@ -21,7 +21,12 @@ func split(sum int) (x, y int) {
 	return
 }
 
+var c, python, java bool
+
 func main() {
+	var i int
+	fmt.Println(i, c, python, java)
+
 	fmt.Println("My favorite number is", rand.Intn(10))
 	fmt.Println(math.Pi)
 	fmt.Println(add(42, 13))

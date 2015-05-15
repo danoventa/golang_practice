@@ -27,5 +27,5 @@ func main() {
 	fmt.Println(add(42, 13))
 	a, b := swap("hello", "world")
 	fmt.Println(a, b)
-	fmt.Println(split(17))
+	fmt.Println(split(17)) // naked returns! 
 }

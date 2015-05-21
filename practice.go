@@ -21,19 +21,34 @@ func split(sum int) (x, y int) {
 	return
 }
 
+var temporary = 100
+
+func doSomething(bleh bool) (x, y string) {
+	if (bleh == true) {
+		x = "test"
+		y = "test"
+	} else {
+		x = "nonono"
+		y = "nonono"
+	}
+	return
+} 
+
 var c, python, java bool
 
 func main() {
 	var i int
 	fmt.Println(i, c, python, java)
 	var x, t int = 1, 2
-	var pyts, jaba = true, false, "no!"
+	var pyts, jaba, s = true, false, "no!"
 	fmt.Println(x, t, s, pyts, jaba)
 
 	fmt.Println("My favorite number is", rand.Intn(10))
 	fmt.Println(math.Pi)
 	fmt.Println(add(42, 13))
-	a, b := swap("hello", "world")
+	a, b := swap("this", "that")
 	fmt.Println(a, b)
 	fmt.Println(split(17)) // naked returns! 
+	
+	fmt.Println(doSomething(false))
 }
